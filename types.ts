@@ -17,7 +17,7 @@ export interface Recipe {
   dietaryTags: string[];
   image: string;
   kidFriendlyReason: string;
-  isLunchbox?: boolean; // New flag for lunchbox specific items
+  isLunchbox?: boolean;
 }
 
 export type DietaryRestriction = 'Vegetarian' | 'Vegan' | 'Nut-Free' | 'Dairy-Free' | 'Low-Sugar';
@@ -30,8 +30,13 @@ export interface AppState {
     pantry: string[];
     freezer: string[];
   };
+  previews: {
+    fridge: string | null;
+    pantry: string | null;
+    freezer: string | null;
+  };
   recipes: Recipe[];
-  lunchboxIdeas: Recipe[]; // New state for lunchbox specific generation
+  lunchboxIdeas: Recipe[];
   shoppingList: string[];
   activeRecipe: Recipe | null;
   selectedRestrictions: DietaryRestriction[];

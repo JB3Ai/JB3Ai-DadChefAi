@@ -1,6 +1,6 @@
 {
-  "name": "FridgeChef AI",
-  "description": "Smart culinary assistant that analyzes your fridge ingredients to suggest personalized recipes with a guided cooking mode.",
+  "name": "DadChefAI - South African edition",
+  "description": "Smart culinary assistant for busy South African dads. Analyzes fridge, pantry, and freezer ingredients to suggest local favorites like Cape Malay curries and lunchbox treats.",
   "requestFramePermissions": [
     "camera"
   ]
